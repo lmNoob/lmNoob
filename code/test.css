@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(296.57deg, rgba(1, 1, 1, 0.95) 35.54%, rgba(0, 0, 0, 0.88) 76.28%, rgba(0, 0, 0, 0.8) 99.63%);
+}
+
+.main {
+    position: absolute;
+    top: -20%;
+}
+
+.ellipse-1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 164.12px;
+    top: 258px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1027.12px;
+    top: 180.42px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 350px;
+    top: 600px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 900px;
+    top: 558px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-5 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 500px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-6 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1200px;
+    top: 700px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.ellipse-7 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 700px;
+    top: 300px;
+    border-radius: 50%;
+    background: linear-gradient(137.33deg, #070707 18.27%, rgba(0, 0, 0, 0.42) 49.49%, rgba(67, 67, 67, 0.71) 84.51%);
+    transform: rotate(-135.33deg);
+}
+
+.card {
+    position: absolute;
+    width: 612px;
+    height: 318px;
+    left: 365px;
+    top: 320px;
+
+    background: radial-gradient(100.9% 373.71% at -0.9% 0%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.01) 100%);
+    border: 0.6px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 51px;
+}
+
+.ellipse-9 {
+    position: relative;
+    top: 10px;
+    width: 130px;
+    height: 130px;
+    margin-left: 38%;
+    border-radius: 50%;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(207, 203, 203, 0.25) 0%, rgba(230, 230, 230, 0) 100%);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+.ellipse-9 img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -5px 0px 0px -10px;
+}
+
+span {
+    font-family: Poppins;
+    color: white;
+}
+
+.letters {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    font-size: 30px;
+}
+
+#nickname {
+    position: absolute;
+    top: 195px;
+    left: 260px;
+    font-size: 20px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="ellipse-1"></div>
+        <div class="ellipse-2"></div>
+        <div class="ellipse-3"></div>
+        <div class="ellipse-4"></div>
+        <div class="ellipse-5"></div>
+        <div class="ellipse-6"></div>
+        <div class="ellipse-7"></div>
+        <div class="card">
+            <div class="ellipse-9">
+                <img src="img.png">
+            </div>
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">Rohan Yadav</span>
+                <br>
+                <span id="nickname">ImNoob</span>
+            </span>
+
+        </div>
+    </div>
+</body>
+<script>
+    let card = anime({
+        targets: '.card',
+        translateY: 50,
+        translateX: 30,
+        duration: 1500,
+        loop: true,
+        easing: 'linear',
+        direction: 'alternate'
+    });
+    let ellipse1 = anime({
+        targets: '.ellipse-1',
+        translateY: [0, 100],
+        duration: 2000,
+        easing: 'linear',
+        direction: 'alternate',
+        delay: 100,
+        loop: true
+    });
+    let ellipse2 = anime({
+        targets: '.ellipse-2',
+        translateX: -50,
+        translateY: 110,
+        duration: 2000,
+        easing: 'linear',
+        direction: 'alternate',
+        loop: true
+    });
+    let ellipse3 = anime({
+        targets: '.ellipse-3',
+        translateX: -30,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        direction: 'alternate'
+    });
+    let ellipse4 = anime({
+        targets: '.ellipse-4',
+        translateY: -20,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        direction: 'alternate'
+    });
+    let ellipse5 = anime({
+        targets: '.ellipse-5',
+        translateY: 90,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        direction: 'alternate'
+    });
+    let ellipse6 = anime({
+        targets: '.ellipse-6',
+        translateY: 40,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        direction: 'alternate'
+    });
+    let ellipse7 = anime({
+        targets: '.ellipse-7',
+        translateY: 210,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        direction: 'alternate'
+    });
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.card .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+            loop: false
+        })
+        .add({
+            targets: '.card .line',
+            scaleY: [0, 1],
+            opacity: [0.5, 1],
+            easing: "easeOutExpo",
+            duration: 700
+        })
+        .add({
+            targets: '.card .line',
+            translateX: [0, document.querySelector('.card .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 700,
+            delay: 100
+        }).add({
+            targets: '.card .letter',
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 600,
+            offset: '-=775',
+            delay: (el, i) => 34 * (i + 1)
+        });
+
+    anime.timeline({
+            loop: false,
+        })
+        .add({
+            targets: '.card #nickname',
+            scale: [0, 1],
+            duration: 1500,
+            elasticity: 600,
+            delay: (el, i) => 45 * (i + 1),
+            delay: 2000
+        });
+</script>
+
+</html>
